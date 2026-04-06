@@ -1,0 +1,6 @@
+﻿apache-maven-3.9.6/
+target/
+.idea/
+*.class
+*.log
+bin/

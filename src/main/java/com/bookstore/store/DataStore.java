@@ -36,7 +36,7 @@ public class DataStore {
         addBook(lotr);
 
         // Add a default customer
-        Customer guest = new Customer("John Doe", "john.doe@example.com", "password123");
+        Customer guest = new Customer("John Doe", "john.doe@example.com", "");
         addCustomer(guest);
     }
 

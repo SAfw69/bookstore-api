@@ -28,16 +28,7 @@ public class DataStore {
     private final AtomicInteger orderIds = new AtomicInteger(1);
 
     private DataStore() {
-        // Pre-populate some dummy data for ease of testing
-        Author tolkien = new Author("J.R.R. Tolkien", "English writer, poet, philologist, and academic.");
-        addAuthor(tolkien);
-
-        Book lotr = new Book("The Lord of the Rings", tolkien.getId(), "978-0-618-05326-7", 1954, 20.99, 100);
-        addBook(lotr);
-
-        // Add a default customer
-        Customer guest = new Customer("John Doe", "john.doe@example.com", "");
-        addCustomer(guest);
+        // No default data seeding. Start fresh.
     }
 
     public static DataStore getInstance() {
